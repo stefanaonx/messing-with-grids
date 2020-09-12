@@ -8,9 +8,12 @@ local etagridh = settings.startup["electric-tank-grid-size-height"].value
 local etrgridw = settings.startup["electric-train-grid-size-width"].value
 local etrgridh = settings.startup["electric-train-grid-size-height"].value
 
-data.raw["equipment-grid"]["voltage-electric-car"].width = ecagridw
-data.raw["equipment-grid"]["voltage-electric-car"].height = ecagridh
-data.raw["equipment-grid"]["voltage-electric-tank"].width = etagridw
-data.raw["equipment-grid"]["voltage-electric-tank"].height = etagridh
-data.raw["equipment-grid"]["voltage-electric-locomotive"].width = etrgridw
-data.raw["equipment-grid"]["voltage-electric-locomotive"].height = etrgridh
+if not mods["bobvehicleequipment"] then
+    data.raw["equipment-grid"]["voltage-electric-car"].width = ecagridw
+    data.raw["equipment-grid"]["voltage-electric-car"].height = ecagridh
+    data.raw["equipment-grid"]["voltage-electric-tank"].width = etagridw
+    data.raw["equipment-grid"]["voltage-electric-tank"].height = etagridh
+    data.raw["equipment-grid"]["voltage-electric-locomotive"].width = etrgridw
+    data.raw["equipment-grid"]["voltage-electric-locomotive"].height = etrgridh
+end
+--Going to modify it in final fixes if bob's vehicle mod is active

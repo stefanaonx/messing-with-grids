@@ -3,3 +3,10 @@ Version: 0.0.1
 Date: 2020.09.11
   Changes:
     - Initial Release.
+    
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2020.09.11
+  Changes:
+    - Added bob's vehicle equipment compatibility.
+    - Fixed the compatibility issues when both bob's vehicle and localized charging are together.
